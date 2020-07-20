@@ -3,17 +3,17 @@ import openpyxl
 from telethon.sync import TelegramClient,events
 from telethon import functions,types,utils,errors
 from threading import Thread
-
+from config import api_id, api_hash
 #------------------API Credentials-----------------------
 ''' Need To Change These Credentials Before Deploying Project'''
-api_id = 17349
-api_hash = '344583e45741c457fe1862106095a5eb'
+
 #--------------------------------------------------------
+
 
 #---------------Global Variables-------------------------
 phone_objects = dict()
 phone_status = dict()
-excel_file = ("D:/nitin imp projects/nitin imp projects/mobile_no_samples.xlsx")
+excel_file = (os.getcwd()+"/mobile_no_samples.xlsx")
 #--------------------------------------------------------
 
 
@@ -58,7 +58,8 @@ def check_client_waiting():
 
 
 
-phone_list = ['601162441016','918149186047']
+#phone_list = ['601162441016','918149186047']
+phone_list = ['918149186047','918452895363']
 
 loop = asyncio.get_event_loop()
 
