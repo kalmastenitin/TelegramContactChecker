@@ -58,8 +58,8 @@ def check_client_waiting():
 
 
 
-#phone_list = ['601162441016','918149186047']
-phone_list = ['918149186047','918452895363']
+
+phone_list = [#add Contacts here with comma seperated values and valid country extension]
 
 loop = asyncio.get_event_loop()
 
